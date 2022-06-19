@@ -69,8 +69,3 @@ To get the bot to just Stand at one place give the following command:
 ```
 python3 main.py --action='stand'
 ```
-
-
-## Things to be done:
-
-- [ ] Change colour of Biped
