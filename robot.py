@@ -2,7 +2,7 @@ import pybullet as p
 import pybullet_data
 import numpy as np
 import time
-import robots.biped.transform as tf
+import transform as tf
 import scipy.linalg as la
 
 

@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.linalg as la
 import control
-import robots.biped.trajectory as trj
+import trajectory as trj
 
 
 class PreviewControl:

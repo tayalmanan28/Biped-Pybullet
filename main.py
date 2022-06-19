@@ -1,6 +1,6 @@
 import numpy as np
-from robots.biped.robot import Biped
-from robots.biped.walking import PreviewControl
+from robot import Biped
+from walking import PreviewControl
 
 
 def stand():
@@ -149,4 +149,6 @@ def walk():
 
 
 if __name__ == '__main__':
-    jump(withTorsoTwist=True)
+    #walk()
+    #jump(withTorsoTwist=False)
+    squat()
