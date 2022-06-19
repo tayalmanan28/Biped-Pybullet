@@ -16,19 +16,13 @@ Switch to the newly create environment (you will notice the name of the environm
 $ conda activate biped-pyb  
 ```
 
-Once in the desired environment install the following packages:  
+Then, clone the repository on your system:
 ```
-$ conda install nb_conda_kernels  
+git clone https://github.com/tayalmanan28/Biped-Pybullet.git
 ```
-
-Install PyBullet (while in the environment):  
+Install the following required packages:
 ```
-$ pip install pybullet  
-```
-
-Install Matplotlib (while in the environment):
-```
-$ conda install matplotlib
+pip install -r requirements.txt
 ```
 
 ### Checking Pybullet Installation
@@ -43,18 +37,7 @@ Inside the python environment import the pybullet and matplotlib libraries:
 >> import pybullet
 >> import matplotlib
 ```
-If this command executes without any error then the installation is successful.  
-
-### Running Biped Code
-
-Then, clone the repository on your system:
-```
-git clone https://github.com/tayalmanan28/Biped-Pybullet.git
-```
-Install the following required packages:
-```
-pip install -r requirements.txt
-```
+If this command executes without any error then the installation is successful. 
 
 
 ## Things to be done:
