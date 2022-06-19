@@ -1,6 +1,7 @@
 import numpy as np
 from robot import Biped
 from walking import PreviewControl
+import argparse
 
 
 def stand():
@@ -149,6 +150,21 @@ def walk():
 
 
 if __name__ == '__main__':
-    #walk()
-    #jump(withTorsoTwist=False)
-    squat()
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument('--action', help='Choose from walk, stand, squat, jump_w_Twist, jump_wo_Twist, torsoTwist', type=str, default='walk')
+    args = parser.parse_args()
+    
+    #---------------------------------------------------------------------------------------------------------------------------------
+    
+    if (args.action == walk):
+        walk()
+    elif (args.action == jump_w_Twist):
+        jump(withTorsoTwist=True)
+    elif (args.action == jump_wo_Twist):
+        jump(withTorsoTwist=False)
+    elif (args.action == squat):
+        squat()
+    elif (args.action == torsoTwist):
+        torsoTwist()
+    else:
+        stand()
