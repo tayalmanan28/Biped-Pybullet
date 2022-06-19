@@ -3,7 +3,6 @@ from robot import Biped
 from walking import PreviewControl
 import argparse
 
-
 def stand():
     biped = Biped()
     CoM_height = 0.45
@@ -156,15 +155,15 @@ if __name__ == '__main__':
     
     #---------------------------------------------------------------------------------------------------------------------------------
     
-    if (args.action == walk):
+    if (args.action == 'walk'):
         walk()
-    elif (args.action == jump_w_Twist):
+    elif (args.action == 'jump_w_Twist'):
         jump(withTorsoTwist=True)
-    elif (args.action == jump_wo_Twist):
+    elif (args.action == 'jump_wo_Twist'):
         jump(withTorsoTwist=False)
-    elif (args.action == squat):
+    elif (args.action == 'squat'):
         squat()
-    elif (args.action == torsoTwist):
+    elif (args.action == 'torsoTwist'):
         torsoTwist()
     else:
         stand()
